@@ -1,0 +1,23 @@
+<div id="main" class="container">
+  <img width="300" alt="LOGO" src="assets/img/maikena.png"/>
+  <h1>INICIO DE SESIÓN</h1><BR>
+  <form id="login" (submit)="login()">
+      <label for="username"><strong>USUARIO</strong></label>
+      <input type="text" name="username" id="username" [(ngModel)]="username" required="required" placeholder="Username">
+      <label for="password" ><strong>CONTRASEÑA</strong></label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password" required="required">
+      <button type="submit">Iniciar Sesión</button>
+      <div id="register">
+        <p>¿No tienes una cuenta?</p>
+        <a routerLink="/register">Regístrate</a>
+      </div>
+      <div id="forgotpw">
+        <p>¿Olvidate tu contraseña?</p>
+        <a href="/forgotpw">Recuperar contraseña</a>
+      </div>
+  </form>
+  <br><br><br>
+  <div id="welcome">
+      <P>WELCOME • BIENVENIDO • ДОБРО ПОЖАЛОВАТЬ • WILLKOMMEN • BEM VINDA • BIENVENUE</P>
+  </div>
+</div>

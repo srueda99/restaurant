@@ -1,0 +1,527 @@
+<div class='app'>
+
+
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+  
+        <a href="#" class="logo d-flex align-items-center me-auto me-lg-0">
+          <h1>Maikena<span>.</span></h1>
+        </a>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li class="dropdown"><a href="#"><span>Ubicaciones</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="#">Nuestras sedes</a></li>
+                <li><a href="#">Laureles</a></li>
+                <li><a href="#">Poblado</a></li>
+                <li><a href="#">Sabaneta</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+  
+        <a class="btn-book-a-table" routerLink="/login">Inicia sesión</a>
+        <a class="btn-book-a-table" routerLink="/register">Registrarse</a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  
+      </div>
+    </header>
+  
+    
+    <section id="hero" class="hero d-flex align-items-center section-bg">
+      <div class="container">
+        <div class="row justify-content-between gy-5">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+            <h2 data-aos="fade-up"><span>¡</span>La mejor cadena de restaurantes europeos<span>!</span></h2>
+            <p data-aos="fade-up" data-aos-delay="100">Maikena es una cadena de restaurantes Colombiana que ofrece la más diversa variedad de cocina Europea</p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+            <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300" />
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <main id="main">
+      
+      <section id="stats-counter" class="stats-counter">
+        <div class="container" data-aos="zoom-out">
+  
+          <div class="row gy-5">
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span><br/>
+                <p>SEDES</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="240000" data-purecounter-duration="1" class="purecounter"></span><br/>
+                <p>CLIENTES AL AÑO</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" class="purecounter"></span><br/>
+                <p>CHEFS</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+  
+      
+      <section id="menu" class="menu">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Nuestro Menú</h2>
+            <p>Revisa el menú <span>Maikena</span></p>
+          </div>
+  
+          <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+  
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+                <h4>Entradas</h4>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+                <h4>Desayunos</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+                <h4>Almuerzos</h4>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+                <h4>Cenas</h4>
+              </a>
+            </li>
+          </ul>
+  
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+  
+            <div class="tab-pane fade active show" id="menu-starters">
+  
+              <div class="tab-header text-center">
+                <p>Menú</p>
+                <h3>Entradas</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Entrada_1" class="glightbox"><img [src]="Entrada_1" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Plato de Jamón Ibérico</h4>
+                  <p class="ingredients">
+                    Lonchas de Jamón Ibérico de Bellota, ideal para compartir.
+                  </p>
+                  <p class="price">
+                    $80.000
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Entrada_2" class="glightbox"><img [src]="Entrada_2" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Tabla de quesos</h4>
+                  <p class="ingredients">
+                    Deliciosa tabla de quesos con queso suizo, queso azul, queso mozzarella para disfrutar entre varios.
+                  </p>
+                  <p class="price">
+                    $60.000
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Entrada_3" class="glightbox"><img [src]="Entrada_3" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Bruschetta Italiana</h4>
+                  <p class="ingredients">
+                    Deliciosa entrada que consiste en pan tostado con ajo y aceite de oliva,
+                    cubiertas con tomates frescos picados, albahaca y queso parmesano.
+                  </p>
+                  <p class="price">
+                    $25.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Entrada_4" class="glightbox"><img [src]="Entrada_4" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Tzatziki</h4>
+                  <p class="ingredients">
+                    Salsa Tzatziki de origen griego elaborada con pepino, yogurt y aceite de oliva.   
+                    Viene acompañado con pan pita o pan de ajo.
+                  </p>
+                  <p class="price">
+                    $19.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Entrada_5" class="glightbox"><img [src]="Entrada_5" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Hummus</h4>
+                  <p class="ingredients">
+                    Pasta de garbanzos proveniente del medio oriente.
+                    Viene acompañado con pan pita o verduras frescas.
+                  </p>
+                  <p class="price">
+                    $24.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Entrada_6" class="glightbox"><img [src]="Entrada_6" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Pierogi</h4>
+                  <p class="ingredients">
+                    Empanaditas polacas rellenas de pure de papa, cebolla y queso. 
+                    Vienen acompañadas con crema agria. 
+                  </p>
+                  <p class="price">
+                    $19.900
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="menu-breakfast">
+  
+              <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Desayunos</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Desayuno_1" class="glightbox"><img [src]="Desayuno_1" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Huevos Españoles</h4>
+                  <p class="ingredients">
+                    Deliciosos huevos acompañadas con papas criollas cocinadas, tocineta en salsa de miel y especias
+                  </p>
+                  <p class="price">
+                    $20.500
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Desayuno_2" class="glightbox"><img [src]="Desayuno_2" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Muesli Suizo</h4>
+                  <p class="ingredients">
+                    Desayuno a base de cereal con yogurt griego, copos de avena, frutos secos y banano
+                  </p>
+                  <p class="price">
+                    $24.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Desayuno_3" class="glightbox"><img [src]="Desayuno_3" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Senfei Aleman</h4>
+                  <p class="ingredients">
+                    Huevos cocidos al punto que prefieras con papas al vapor y acompañados en una suave y 
+                    cremosa salsa de mostaza alemana
+                  </p>
+                  <p class="price">
+                    $20.500
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Desayuno_4" class="glightbox"><img [src]="Desayuno_4" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Speckpfannkuchen</h4>
+                  <p class="ingredients">
+                    Tortilla de huevo alemana con tocino, queso mozarella derretido y pepinillos
+                  </p>
+                  <p class="price">
+                    $20.500
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Desayuno_5" class="glightbox"><img [src]="Desayuno_5" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Aprikosen Bienenstich</h4>
+                  <p class="ingredients">
+                    Postre tradicional aleman relleno de mantequilla, azucar y crema de almendras
+                    caramelizadas
+                  </p>
+                  <p class="price">
+                    $24.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Desayuno_6" class="glightbox"><img [src]="Desayuno_6" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Desayuno Aleman</h4>
+                  <p class="ingredients">
+                    Desayuno elaborado con ingredientes abundantes como el huevo revuelto, la papa cocida, tocino 
+                    y especias
+                  </p>
+                  <p class="price">
+                    $18.500
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="menu-lunch">
+  
+              <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Almuerzos</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Almuerzo_1" class="glightbox"><img [src]="Almuerzo_1" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Pollo a la Provenzal</h4>
+                  <p class="ingredients">
+                    Delicioso pollo cocinado a fuego lento bañado en salsa a base de vino blanco, perejil y
+                    otras especias. Viene acompañado con papas a la francesa, en casco o criollas 
+                  </p>
+                  <p class="price">
+                    $35.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Almuerzo_2" class="glightbox"><img [src]="Almuerzo_2" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Risotto de Mariscos</h4>
+                  <p class="ingredients">
+                    Risotto cremoso con calamares, camarones y mejillones con una deliciosa salsa de vino blanco
+                  </p>
+                  <p class="price">
+                    $40.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Almuerzo_3" class="glightbox"><img [src]="Almuerzo_3" class="menu-img img-fluid" alt=" "/></a>
+                  <h4>Pollo a la marengo</h4>
+                  <p class="ingredients">
+                    Una exquisita y sabrosa creacion inspirada en la cocina francesa. Nuestro plato combina pechuga de pollo
+                    tierna y jugosa con una rica salsa de tomate, champiñones, ajo, vino blanco y hierbas frescas.
+                  </p>
+                  <p class="price">
+                    $35.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Almuerzo_4" class="glightbox"><img [src]="Almuerzo_4" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Bistecca alla Fiorentina</h4>
+                  <p class="ingredients">
+                    Un autentico deleite italiano, un corte excepcionalmente jugoso y tierno de carne de bufalo sazonado
+                    con acelite de oliva extra virgen, sal marina gruesa y hierbas frescas de la region 
+                  </p>
+                  <p class="price">
+                    $72.400
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Almuerzo_5" class="glightbox"><img [src]="Almuerzo_5" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Ratatouille Provenzal</h4>
+                  <p class="ingredients">
+                    Este plato emblemático presenta una armoniosa mezcla de verduras mediterraneas cuidadosamente asadas, 
+                    incluyendo berenjenas, calabacines, tomates y pimientos realzadas con hierbas aromaticas como tomillo 
+                    y romero. 
+                  </p>
+                  <p class="price">
+                    $42.500
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a [href]="Almuerzo_6" class="glightbox"><img [src]="Almuerzo_6" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Filete Mignon Rossini</h4>
+                  <p class="ingredients">
+                    Este suculento filete de res, seleccionado cuidadosamente por su terneza y calidad, es asado
+                    a la perfeccion y coronado con laminas de foie gras  decadente y trufas negras, creando una
+                    experiencia gastronomica unica y lujosa
+                  </p>
+                  <p class="price">
+                    $53.500
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="menu-dinner">
+  
+              <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Cena</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/menu/cena-carbonara-italia.jpg" class="glightbox"><img src="assets/img/menu/cena-carbonara-italia.jpg" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Pasta carbonara</h4>
+                  <p class="ingredients">
+                    Nuestra pasta larga, cuidadosamente cocida al dente se envuelve en una sedosa y cremosa salsa de huevo,
+                    enriquecida con queso parmesano de alta calidad. Añadimos la indulgencia de la panceta crujiente y la
+                    pimienta negra molida
+                  </p>
+                  <p class="price">
+                    $38.500
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/menu/cena-cazuela-frances.jpg" class="glightbox"><img src="assets/img/menu/cena-cazuela-frances.jpg" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Cazuela de Boeuf Bourguignon</h4>
+                  <p class="ingredients">
+                    Un clasico frances que celebra la excelencia de la cocina casera. Trozos tiernos de carne 
+                    de res se sumergen en un guiso de vino tinto creando una riqueza de sabores que se fusionan con
+                    la suavidad de las cebollas perla, champiñones frescos y tocinos ahumados. 
+                  </p>
+                  <p class="price">
+                    $45.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/menu/cena-pulpo-españa.jpg" class="glightbox"><img src="assets/img/menu/cena-pulpo-españa.jpg" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Pulpo a la Gallega</h4>
+                  <p class="ingredients">
+                    Una delicia marina que captura la esencia de la cocina española. Nuestro pulpo, tierno y jugoso se cocina
+                    con maestria y se sirve en finas rodajas sobre una cama de papas tiernas cocidas al vapor.
+                  </p>
+                  <p class="price">
+                    $52.900
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/menu/tabla-tzatziki.png" class="glightbox"><img src="assets/img/menu/tabla-tzatziki.png" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Eos Luibusdam</h4>
+                  <p class="ingredients">
+                    Lorem, deren, trataro, filede, nerada
+                  </p>
+                  <p class="price">
+                    $12.95
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/menu/tabla-hummus.jpg" class="glightbox"><img src="assets/img/menu/tabla-hummus.jpg" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Eos Luibusdam</h4>
+                  <p class="ingredients">
+                    Lorem, deren, trataro, filede, nerada
+                  </p>
+                  <p class="price">
+                    $12.95
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/menu/tabla-pierogi.png" class="glightbox"><img src="assets/img/menu/tabla-pierogi.png" class="menu-img img-fluid" alt="" /></a>
+                  <h4>Laboriosam Direva</h4>
+                  <p class="ingredients">
+                    Lorem, deren, trataro, filede, nerada
+                  </p>
+                  <p class="price">
+                    $9.95
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+  
+    </main>
+  
+    <footer id="footer" class="footer">
+  
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-geo-alt icon"></i>
+            <div>
+              <h4>Direcciones</h4>
+              <p>
+                Tv 39 #76-35 <br/>
+                Cra 34<br />
+                Cl. 70 Sur #44-1<br />
+              </p>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Contacto</h4>
+              <p>
+                <strong>Phone:</strong> +57 305 352 3478<br />
+                <strong>Email:</strong> soporte@maikena.com<br />
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-clock icon"></i>
+            <div>
+              <h4>Horario</h4>
+              <p>
+                <strong>Lun-Jue:</strong> 9:00AM - 11:00PM<br />
+                <strong>Vie-Sab:</strong> 9:00AM - 12:00PM<br />
+                <strong>Dom:</strong> 9:00AM - 10:00PM
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>¡Síguenos!</h4>
+            <div class="social-links d-flex">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Maikena</span></strong>.
+        </div>
+      </div>
+  
+    </footer>
+  
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <div id="preloader"></div>
+  
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  

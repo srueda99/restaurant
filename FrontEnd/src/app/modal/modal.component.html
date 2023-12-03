@@ -1,0 +1,10 @@
+<div class="modal-overlay" >
+  <div class="modal-container">
+    <h2>{{ titulo }}</h2>
+    <!-- Contenido del modal -->
+    <ng-content></ng-content>
+    <button *ngIf="value == 'reservas'" (click)="cerrarReservas()">Cerrar</button>
+    <button *ngIf="value == 'usuarios'" (click)="cerrarUsuarios()">Cerrar</button>
+    <button *ngIf="value == ''" (click)="cerrarReservas()">Cerrar</button>
+  </div>
+</div>

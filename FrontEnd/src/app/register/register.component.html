@@ -1,0 +1,33 @@
+<div class="container"> 
+  <div id="img">
+      <IMG width="300" alt="LOGO" src="assets/img/maikena.png"/>
+  </div>
+  <h1>REGISTRO</h1><BR>
+      <form id="create" (submit)="register()">
+        <label for="username"><strong>USUARIO</strong></label>
+        <input type="text" name="username" id="username" [(ngModel)]="username" required="required" placeholder="Username">
+        <label for="email"><strong>CORREO</strong></label>
+        <input type="text" name="email" id="email" [(ngModel)]="email" required="required" placeholder="Email">
+        <label for="password" ><strong>CONTRASEÑA</strong></label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password" required="required">
+        <label for="password" ><strong>REPETIR CONTRASEÑA</strong></label>
+        <input
+        id="confpassword"
+        type="password"
+        [(ngModel)]="confirmPassword"
+        name="password"
+        placeholder="Repeat the password"
+        required="required"
+      />
+        <button type="submit">Registrarse</button>
+        <div id="login">
+          <p>¿Ya tienes una cuenta?</p>
+          <a routerLink="/login">Inicia Sesión</a>
+        </div>
+      </form>
+<br><br><br>
+  <div id="welcome">
+      <P>WELCOME • BIENVENIDO • ДОБРО ПОЖАЛОВАТЬ • WILLKOMMEN • BEM VINDA • BIENVENUE</P>
+  </div>
+ 
+</div>
